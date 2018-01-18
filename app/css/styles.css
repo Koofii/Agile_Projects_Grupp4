@@ -1,1 +1,11 @@
 /* sass breakpoint mixin */
+.buttons {
+  background-color: #157A6E;
+  border: none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 3px; }
