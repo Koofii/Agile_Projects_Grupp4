@@ -1,1 +1,70 @@
 /* sass breakpoint mixin */
+.button-recept a {
+  border: none;
+  color: #E8E8EB;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 6px;
+  border-radius: 3px;
+  font-family: "Merriweather", serif; }
+
+body {
+  background-color: #E8E8EB; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.kladdkaka-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto; }
+
+.information-recept {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #157A6E; }
+
+.to-do {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 27% 23% 23% 27%;
+  font-family: "Merriweather", serif;
+  color: #555050; }
+
+.ingredienser {
+  grid-column: 2/3; }
+  .ingredienser p {
+    border-bottom: 1px solid #555050;
+    width: 90%; }
+  .ingredienser h1 {
+    text-align: center; }
+  .ingredienser h2 {
+    border-bottom: 1px solid #555050;
+    width: 90%;
+    text-align: center; }
+
+.do-like {
+  grid-column: 3/4; }
+  .do-like h1 {
+    text-align: center; }
+
+select {
+  width: 30%;
+  padding: 9px 9px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: #BEE6CE;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: #555050; }
+
+.button-recept {
+  text-align: center;
+  margin-top: 30px; }
+  .button-recept a:nth-child(1) {
+    background-color: #55BCA5; }
+  .button-recept a:nth-child(2) {
+    background-color: #157A6E; }

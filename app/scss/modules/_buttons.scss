@@ -1,0 +1,13 @@
+.button-recept {
+    text-align: center;
+    margin-top: 30px;
+    & a{
+        @extend %button;
+        &:nth-child(1){
+            background-color: map-get($colors, second);
+        }
+        &:nth-child(2){
+            background-color: map-get($colors, first )
+        }
+    }
+}
