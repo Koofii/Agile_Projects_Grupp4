@@ -1,0 +1,44 @@
+.beställing {
+    font-family: Merriweatherlight;
+    text-align: center;
+    margin-bottom: 0;
+}
+.beställing .tak { 
+    color: map-get($colors, second);
+    margin-bottom: 30px;
+    font-size: 35px;
+    margin-top: 60px;
+}
+.beställing p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+.beställing span {
+    color: map-get($colors, second);  
+}
+.beställing img {
+    height: auto;
+    width: 65%;
+}
+@include respond-to("medium") { /*Breakpoint medium*/
+
+.beställing .tak { 
+    font-size: 40px;
+}
+.beställing p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px;
+    margin-right: 240px;
+    margin-left: 240px;
+}
+.beställing img {
+    width: 50%;
+}
+}

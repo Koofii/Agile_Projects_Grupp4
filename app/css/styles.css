@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* sass breakpoint mixin */
 .button-recept a {
   border: none;
@@ -205,3 +206,44 @@ select {
     background-color: #55BCA5; }
   .button-recept a:nth-child(2) {
     background-color: #157A6E; }
+
+.beställing {
+  font-family: Merriweatherlight;
+  text-align: center;
+  margin-bottom: 0; }
+
+.beställing .tak {
+  color: #55BCA5;
+  margin-bottom: 30px;
+  font-size: 35px;
+  margin-top: 60px; }
+
+.beställing p {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  margin-right: 140px;
+  margin-left: 140px; }
+
+.beställing span {
+  color: #55BCA5; }
+
+.beställing img {
+  height: auto;
+  width: 65%; }
+
+@media (min-width: 45em) {
+  /*Breakpoint medium*/
+  .beställing .tak {
+    font-size: 40px; }
+  .beställing p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px;
+    margin-right: 240px;
+    margin-left: 240px; }
+  .beställing img {
+    width: 50%; } }
