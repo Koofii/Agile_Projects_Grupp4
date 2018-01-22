@@ -7,15 +7,15 @@ $breakpoints:(
 
 ) !default;
     
-///colorscheme
+//colorscheme
 $colors: (
-    bright: rgb(255, 255, 255),
-    medium-grey: rgb(149, 152, 154),
-    hover-effect: rgb(204, 183, 183),
-    coffee: rgb(85, 51, 38),
-    main: #333,
-
-) !default;
+    first: #157a6e,
+    second: #55bca5,
+    third: #bee6ce,
+    fourth: #60abab,
+    fifth: #555050,
+    sixth: #e8e8eb,
+ ) !default;
 
 ///Font
 $font: 'Barlow Semi Condensed', sans-serif;
