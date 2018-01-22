@@ -20,6 +20,13 @@ a {
   margin: 0 auto;
   width: 50%;
   height: auto; }
+  @media (max-width: 45em) {
+    .kladdkaka-image {
+      width: 100%;
+      height: auto; }
+      .kladdkaka-image figure img {
+        width: 100%;
+        height: auto; } }
 
 .information-recept {
   text-align: center;
@@ -32,9 +39,18 @@ a {
   grid-template-columns: 27% 23% 23% 27%;
   font-family: "Merriweather", serif;
   color: #555050; }
+  @media (min-width: 45em) {
+    .to-do {
+      grid-template-columns: 20% 30% 30% 20%; } }
+  @media (max-width: 45em) {
+    .to-do {
+      grid-template-columns: 1fr; } }
 
 .ingredienser {
   grid-column: 2/3; }
+  @media (max-width: 45em) {
+    .ingredienser {
+      grid-column: auto; } }
   .ingredienser p {
     border-bottom: 1px solid #555050;
     width: 90%; }
@@ -47,11 +63,14 @@ a {
 
 .do-like {
   grid-column: 3/4; }
+  @media (max-width: 45em) {
+    .do-like {
+      grid-column: auto; } }
   .do-like h1 {
     text-align: center; }
 
 select {
-  width: 30%;
+  width: auto;
   padding: 9px 9px;
   margin-bottom: 5px;
   border: none;
@@ -60,10 +79,16 @@ select {
   font-family: "Merriweather", serif;
   font-weight: bold;
   color: #555050; }
+  @media (max-width: 45em) {
+    select {
+      width: auto; } }
 
 .button-recept {
   text-align: center;
   margin-top: 30px; }
+  @media (max-width: 45em) {
+    .button-recept a {
+      display: block; } }
   .button-recept a:nth-child(1) {
     background-color: #55BCA5; }
   .button-recept a:nth-child(2) {

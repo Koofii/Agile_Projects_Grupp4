@@ -1,8 +1,14 @@
 .button-recept {
     text-align: center;
     margin-top: 30px;
+
     & a{
         @extend %button;
+        
+        @include respond-to('small'){
+            display: block;
+        }
+
         &:nth-child(1){
             background-color: map-get($colors, second);
         }
