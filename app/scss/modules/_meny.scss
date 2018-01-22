@@ -1,0 +1,158 @@
+///Mobile-menu-bar
+.mobile-menu-bar{
+    min-width: 100vw;
+    //Vet inte var marginalen blir konstig men får korrigera left och top med min widht på 100vw för
+    //att få bort margen
+    margin-left: -8px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: map-get($colors, first);
+    img{
+        max-width: 4em;
+        margin-right: 2em;
+    }
+    .toggle{
+        font-size: 2em;
+        margin-left: 1em;
+        color: map-get($colors, sixth);
+
+        &:hover{
+            color: map-get($colors, second);
+        }
+    }
+}
+
+///Menu
+#menu{
+    
+    *{
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    background: map-get($colors, first);
+    top: 0;
+    bottom: 0;
+    transition: ease-in-out 1s;
+    min-height: 100vh;
+    position: fixed;
+    min-width: 12em;
+    max-width: 20em;
+    widows: 30vw;
+    left: -25em;
+    
+    &:target{
+        transform: translateX(25em);
+    }
+    .close{
+        display: block;
+        position: relative;
+        font-size: 2em;
+        margin: 10px;
+        color: map-get($colors, sixth);
+
+        &:hover{
+            color: map-get($colors, second);
+        }
+    }
+    
+    .left-menu, .right-menu{
+        margin: 1em;
+        font-size: 24px;
+        
+        li{
+            margin-bottom: 14px;
+            a{
+                color: map-get($colors, sixth);
+
+                &:hover{
+                    color: map-get($colors, second);
+                }
+            }
+        }
+    }
+    
+    .left-menu{
+        margin-top: 50%;
+    }
+    .right-menu{
+        margin-top: 40%;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+    
+
+@include respond-to("medium"){
+//Nollställning av mobile
+    .mobile-menu-bar{
+        display: none;
+    }
+
+    #menu{
+        transition: none;
+        min-height: initial;
+        position: initial;
+        min-width: initial;
+        max-width: initial;
+        widows: initial;
+        left: initial;
+
+        .close{
+            display: none;
+        }
+
+        .logo{
+            display: block;
+        }
+
+        .left-menu, .right-menu{
+            margin: initial;
+            font-size: initial;
+            
+            li{
+                margin-bottom: initial;
+            }
+        }
+        
+        .left-menu{
+            margin-top: initial;
+        }
+        .right-menu{
+            margin-top: initial;
+        }
+
+        //Nollställning klar
+
+        display: flex;
+        margin: -8px -8px 0px -8px;
+        justify-content: space-between;
+        align-items: center;
+        background: map-get($colors, first);
+
+        ul{
+            display: flex;
+            flex-flow: wrap;
+            margin-left: 4em;
+            
+            li{
+                margin-right: 4em;
+                a{
+                    color: map-get($colors, sixth);
+                    font-size: 24px;
+                }
+
+                img{
+                    max-width: 7em;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
