@@ -1,0 +1,30 @@
+.buttons{
+    background-color: map-get($colors, main );
+    border: none;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 3px;
+}
+.button-recept {
+    text-align: center;
+    margin-top: 30px;
+
+    & a{
+        @extend %button;
+        
+        @include respond-to('small'){
+            display: block;
+        }
+
+        &:nth-child(1){
+            background-color: map-get($colors, second);
+        }
+        &:nth-child(2){
+            background-color: map-get($colors, first )
+        }
+    }
+}
