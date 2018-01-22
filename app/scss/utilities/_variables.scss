@@ -9,8 +9,8 @@ $breakpoints:(
     
 ///colorscheme
 $colors: (
-    main: #157A6E,
-    secondary: #55BCA5,
+    first: #157A6E,
+    second: #55BCA5,
     third: #BEE6CE,
     fourth: #60ABAB,
     fifth: #555050,
@@ -19,4 +19,4 @@ $colors: (
 ) !default;
 
 ///Font
-$font: 'Merriweather', serif;
+$font: 'Merriweather', serif;;
