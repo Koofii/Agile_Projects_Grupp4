@@ -26,6 +26,7 @@
     height: auto;
     width: 65%;
 }
+
 @include respond-to("medium") { /*Breakpoint medium*/
 
 .beställing .tak { 
