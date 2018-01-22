@@ -1,1 +1,26 @@
 /* sass breakpoint mixin */
+.recept-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  max-width: 450px; }
+
+.recept-list img {
+  width: 100%;
+  height: auto; }
+
+.recept-list p {
+  background-color: #60abab;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  opacity: 0.8;
+  font-size: 30px;
+  color: #e8e8eb;
+  text-align: center;
+  align-self: flex-end; }
+
+h1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #55bca5;
+  text-align: center; }

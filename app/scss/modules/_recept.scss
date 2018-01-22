@@ -1,0 +1,30 @@
+.recept-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+    max-width: 450px;
+}
+
+.recept-list img{
+ width:100%;
+ height: auto;
+}
+
+.recept-list p{
+    background-color:map-get($colors,fourth);
+    margin:auto;
+    width: 100%; 
+    height: 40px;
+    opacity: 0.8;
+    font-size: 30px;
+    color:map-get($colors,sixth);
+    text-align: center;
+    align-self: flex-end;
+}
+
+h1 {
+    font-family: $font;
+    color: map-get($colors,second);
+    text-align: center;
+}
+
