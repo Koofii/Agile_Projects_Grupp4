@@ -15,6 +15,108 @@ a {
   text-decoration: none;
   color: white; }
 
+.mobile-menu-bar {
+  min-width: 100vw;
+  margin-left: -8px;
+  margin-top: -8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #157A6E; }
+  .mobile-menu-bar img {
+    max-width: 4em;
+    margin-right: 2em; }
+  .mobile-menu-bar .toggle {
+    font-size: 2em;
+    margin-left: 1em;
+    color: #E8E8EB; }
+    .mobile-menu-bar .toggle:hover {
+      color: #55BCA5; }
+
+#menu {
+  background: #157A6E;
+  top: 0;
+  bottom: 0;
+  transition: ease-in-out 1s;
+  min-height: 100vh;
+  position: fixed;
+  min-width: 12em;
+  max-width: 20em;
+  widows: 30vw;
+  left: -25em; }
+  #menu * {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  #menu:target {
+    transform: translateX(25em); }
+  #menu .close {
+    display: block;
+    position: relative;
+    font-size: 2em;
+    margin: 10px;
+    color: #E8E8EB; }
+    #menu .close:hover {
+      color: #55BCA5; }
+  #menu .left-menu, #menu .right-menu {
+    margin: 1em;
+    font-size: 24px; }
+    #menu .left-menu li, #menu .right-menu li {
+      margin-bottom: 14px; }
+      #menu .left-menu li a, #menu .right-menu li a {
+        color: #E8E8EB; }
+        #menu .left-menu li a:hover, #menu .right-menu li a:hover {
+          color: #55BCA5; }
+  #menu .left-menu {
+    margin-top: 50%; }
+  #menu .right-menu {
+    margin-top: 40%; }
+  #menu .logo {
+    display: none; }
+
+@media (min-width: 45em) {
+  .mobile-menu-bar {
+    display: none; }
+  #menu {
+    transition: none;
+    min-height: initial;
+    position: initial;
+    min-width: initial;
+    max-width: initial;
+    widows: initial;
+    left: initial;
+    display: flex;
+    margin: -8px -8px 0px -8px;
+    justify-content: space-between;
+    align-items: center;
+    background: #157A6E; }
+    #menu .close {
+      display: none; }
+    #menu .logo {
+      display: block; }
+    #menu .left-menu, #menu .right-menu {
+      margin: initial;
+      font-size: initial; }
+      #menu .left-menu li, #menu .right-menu li {
+        margin-bottom: initial; }
+    #menu .left-menu {
+      margin-top: initial; }
+    #menu .right-menu {
+      margin-top: initial; }
+    #menu ul {
+      display: flex;
+      flex-flow: wrap;
+      margin-left: 4em; }
+      #menu ul li {
+        margin-right: 4em; }
+        #menu ul li a {
+          color: #E8E8EB;
+          font-size: 24px; }
+        #menu ul li img {
+          max-width: 7em;
+          height: auto; } }
+
 .kladdkaka-image {
   display: block;
   margin: 0 auto;
@@ -82,6 +184,16 @@ select {
   @media (max-width: 45em) {
     select {
       width: auto; } }
+
+.buttons {
+  border: none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 3px; }
 
 .button-recept {
   text-align: center;
