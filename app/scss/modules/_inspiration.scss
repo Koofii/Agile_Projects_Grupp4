@@ -6,7 +6,7 @@ section {
     color: map-get($colors, fifth);
     text-align: center;
 }
-.recept-list{ 
+.gallery .recept-list{ 
     display: flex;
     flex-direction: column;
     margin-top:1.5em;
@@ -16,11 +16,11 @@ section {
     position: relative;
     z-index: -1;
 }
-main img {
+.gallery img {
     height: auto;
     width: 100%;
 }
-main p {
+.gallery p {
     background-color:map-get($colors,fourth);
     width: 100%; 
     height: 35px;

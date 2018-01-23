@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* sass breakpoint mixin */
-.button-recept a {
+.button-recept a, .button-ms a {
   border: none;
   color: #e8e8eb;
   padding: 15px 32px;
@@ -189,6 +189,7 @@ select {
       width: auto; } }
 
 .buttons {
+  background-color: #157a6e;
   border: none;
   color: white;
   padding: 30px 50px;
@@ -221,7 +222,7 @@ select {
   .recept-list img {
     width: 100%;
     height: auto; }
-  .recept-list p {
+  .recept-list .foodname {
     background-color: #60abab;
     width: 100%;
     height: 35px;
@@ -233,7 +234,7 @@ select {
     position: absolute;
     opacity: 0.9; }
 
-h1 {
+.sidans-namn {
   font-family: "Merriweather", serif;
   color: #55bca5;
   text-align: center; }
@@ -244,7 +245,7 @@ h1 {
   color: #555050;
   font-size: 20px; }
 
-a {
+.visamer a {
   color: #55bca5;
   display: flex;
   justify-content: center;
@@ -268,12 +269,12 @@ a {
     text-align: left; }
   .recept-list {
     margin: 0.3em; }
-  a {
+  .visamer {
     grid-column: 3/4;
     margin-left: 30%; } }
 
 @media (min-width: 94em) {
-  a {
+  .visamer {
     margin-left: 45%; } }
 
 .beställing {
@@ -398,7 +399,7 @@ section {
   color: #555050;
   text-align: center; }
 
-.recept-list {
+.gallery .recept-list {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em;
@@ -408,11 +409,11 @@ section {
   position: relative;
   z-index: -1; }
 
-main img {
+.gallery img {
   height: auto;
   width: 100%; }
 
-main p {
+.gallery p {
   background-color: #60abab;
   width: 100%;
   height: 35px;
@@ -424,8 +425,36 @@ main p {
   position: absolute;
   opacity: 0.9; }
 
+.mina-sidor {
+  width: 80%;
+  margin: 0 auto; }
+
+.ms {
+  font-family: "Merriweather", serif;
+  color: #60abab; }
+
+.mina-flex {
+  display: flex;
+  justify-content: space-between; }
+  .mina-flex p {
+    font-size: 35px;
+    color: #555050; }
+    .mina-flex p span {
+      color: #60abab; }
+
+.button-ms {
+  text-align: center;
+  margin-top: 30px; }
+  .button-ms a {
+    background-color: #60abab; }
+    @media (max-width: 45em) {
+      .button-ms a {
+        display: block; } }
+  .button-ms .logga-ut {
+    background-color: #555050; }
+
 @media (min-width: 45em) {
-  section main {
+  section .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;

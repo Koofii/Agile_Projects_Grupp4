@@ -1,0 +1,28 @@
+.mina-flex{
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+        font-size: 35px;
+        color: map-get($colors, fifth );
+
+        & span{
+            color: map-get($colors, fourth )
+        }
+    }
+}
+.button-ms{
+    text-align: center;
+    margin-top: 30px;
+
+    & a{
+        @extend %button;
+        background-color: map-get($colors, fourth );
+        @include respond-to('small'){
+            display: block;
+        }
+    }
+    & .logga-ut{
+        background-color: map-get($colors, fifth );
+    }
+}
