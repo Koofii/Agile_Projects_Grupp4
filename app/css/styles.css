@@ -205,7 +205,6 @@ select {
   .button-recept a:nth-child(1) {
     background-color: #55bca5; }
   .button-recept a:nth-child(2) {
-<<<<<<< HEAD
     background-color: #157a6e; }
 
 .recept-list {
@@ -274,8 +273,6 @@ a {
 @media (min-width: 94em) {
   a {
     margin-left: 45%; } }
-=======
-    background-color: #157A6E; }
 
 .beställing {
   font-family: Merriweatherlight;
@@ -283,7 +280,7 @@ a {
   margin-bottom: 0; }
 
 .beställing .tak {
-  color: #55BCA5;
+  color: #55bca5;
   margin-bottom: 30px;
   font-size: 35px;
   margin-top: 60px; }
@@ -299,7 +296,7 @@ a {
   margin-left: 140px; }
 
 .beställing span {
-  color: #55BCA5; }
+  color: #55bca5; }
 
 .beställing img {
   height: auto;
@@ -317,4 +314,3 @@ a {
     margin-left: 240px; }
   .beställing img {
     width: 50%; } }
->>>>>>> bekräftelse
