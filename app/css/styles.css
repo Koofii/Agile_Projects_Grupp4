@@ -247,3 +247,75 @@ select {
     margin-left: 240px; }
   .beställing img {
     width: 50%; } }
+
+header {
+  font-family: Merriweatherlight;
+  margin-top: 50px; }
+
+header h1,
+header h4 {
+  color: #555050;
+  text-align: center; }
+
+header h1 {
+  font-size: 20px; }
+
+header h4 {
+  font-size: 14px;
+  margin-bottom: 40px; }
+
+header a {
+  color: #55BCA5; }
+
+.reklam {
+  background-image: url(https://mealenvy.files.wordpress.com/2016/02/posts.png?w=1024&h=399&crop=1);
+  background-repeat: no-repeat;
+  /*displays the image once*/
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  margin-right: 20px; }
+
+.reklam h1,
+.reklam h4,
+.beställ {
+  color: #E8E8EB;
+  text-align: left;
+  margin-left: 10px; }
+
+.reklam h1 {
+  font-size: 30px;
+  padding-top: 10px; }
+
+.reklam h4 {
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 65%;
+  margin-bottom: 20px; }
+
+.beställ {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #55BCA5; }
+
+@media (min-width: 45em) {
+  /*Breakpoint medium*/
+  header h1 {
+    font-size: 30px; }
+  header h4 {
+    font-size: 20px; }
+  .reklam h1,
+  .reklam h4,
+  .beställ {
+    margin-left: 25px; }
+  .reklam h1 {
+    font-size: 45px;
+    padding-top: 25px; }
+  .reklam h4 {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 45%;
+    margin-bottom: 35px; }
+  .beställ {
+    font-size: 25px;
+    padding: 10px; } }
