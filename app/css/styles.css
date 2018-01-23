@@ -254,7 +254,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto; }
   h1 {
     grid-row: 1;
