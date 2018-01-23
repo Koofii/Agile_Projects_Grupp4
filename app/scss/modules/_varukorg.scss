@@ -1,0 +1,88 @@
+///Varukorgen
+.varukorgen{
+    text-align: center;
+    margin: 4em 15% 0px 15%;
+    *{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    h2{
+        color: map-get($colors, second);
+    }
+    p{
+        color: map-get($colors, fifth);
+    }
+
+    a{
+        color: map-get($colors, second);
+    }
+
+    .ta-bort-r{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        #remove{
+            color: map-get($colors, fifth);
+            margin-right: 1em;
+        }
+
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .recept-storlek{
+      p{
+          span{
+              margin-left: 1em;
+          }
+      }
+    }
+    
+    
+    .innehåll{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+
+                .grouped-form-item{
+                    display: flex;
+                    align-items: baseline;
+                    p{
+                        margin-left: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .slut-pris{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        background: map-get($colors, first);
+        border: none;
+        color: map-get($colors, sixth);
+        padding: 15px 32px;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+}
+
+///Varukorg medium brytpunkt
+@include respond-to("medium"){
+    .varukorgen{
+        margin: 4em 30% 0px 30%;
+    }
+}
