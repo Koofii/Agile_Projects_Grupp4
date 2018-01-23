@@ -208,9 +208,6 @@ select {
   .button-recept a:nth-child(2) {
     background-color: #157a6e; }
 
-.logga-ut {
-  background-color: #157a6e; }
-
 .recept-list {
   display: flex;
   flex-direction: column;
@@ -451,6 +448,8 @@ section {
     @media (max-width: 45em) {
       .button-ms a {
         display: block; } }
+  .button-ms .logga-ut {
+    background-color: #555050; }
 
 @media (min-width: 45em) {
   section .gallery {
