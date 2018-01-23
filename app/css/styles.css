@@ -431,6 +431,87 @@ section {
   font-family: "Merriweather", serif;
   color: #60abab; }
 
+.varukorgen {
+  text-align: center;
+  margin: 4em 15% 0px 15%; }
+  .varukorgen * {
+    text-decoration: none;
+    list-style-type: none; }
+  .varukorgen h2 {
+    color: #55bca5; }
+  .varukorgen p {
+    color: #555050; }
+  .varukorgen a {
+    color: #55bca5; }
+  .varukorgen .ta-bort-r {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+    .varukorgen .ta-bort-r #remove {
+      color: #555050;
+      margin-right: 1em; }
+  .varukorgen img {
+    max-width: 100%;
+    height: auto; }
+  .varukorgen .recept-storlek p span {
+    margin-left: 1em; }
+  .varukorgen .innehåll ul {
+    padding: 0;
+    margin: 0; }
+    .varukorgen .innehåll ul li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between; }
+      .varukorgen .innehåll ul li .grouped-form-item {
+        display: flex;
+        align-items: baseline; }
+        .varukorgen .innehåll ul li .grouped-form-item p {
+          margin-left: 2em; }
+  .varukorgen .slut-pris {
+    display: flex;
+    flex-direction: column; }
+  .varukorgen .button {
+    background: #157a6e;
+    border: none;
+    color: #e8e8eb;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer; }
+
+@media (min-width: 45em) {
+  .varukorgen {
+    margin: 4em 30% 0px 30%; } }
+
+footer {
+  background: #55bca5;
+  margin: 0px -8px -8px -8px;
+  display: flex;
+  justify-content: space-between; }
+  footer h4 {
+    color: #555050; }
+  footer p {
+    color: #e8e8eb;
+    font-size: 12px; }
+  footer .social-media {
+    margin-left: 3em; }
+    footer .social-media img {
+      max-width: 10vw; }
+  footer .kontakt {
+    margin-right: 3em; }
+
+@media (min-width: 45em) {
+  footer p {
+    font-size: 18px; }
+  footer h4 {
+    font-size: 22px; }
+  footer .social-media {
+    margin-left: 20%; }
+    footer .social-media img {
+      max-width: 5vw; }
+  footer .kontakt {
+    margin-right: 20%; } }
+
 .mina-flex {
   display: flex;
   justify-content: space-between; }
