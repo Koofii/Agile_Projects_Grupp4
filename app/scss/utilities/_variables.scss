@@ -7,15 +7,17 @@ $breakpoints:(
 
 ) !default;
     
-///colorscheme
+//colorscheme
 $colors: (
-    first: #157A6E,
-    second: #55BCA5,
-    third: #BEE6CE,
-    fourth: #60ABAB,
+
+    first: #157a6e,
+    second: #55bca5,
+    third: #bee6ce,
+    fourth: #60abab,
     fifth: #555050,
-    sixth: #E8E8EB,
-) !default;
+    sixth: #e8e8eb,
+ ) !default;
+
 
 ///Font
 $font: 'Merriweather', serif;
