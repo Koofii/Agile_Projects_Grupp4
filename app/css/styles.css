@@ -314,3 +314,119 @@ a {
     margin-left: 240px; }
   .beställing img {
     width: 50%; } }
+
+header {
+  font-family: Merriweatherlight;
+  margin-top: 50px; }
+
+header h1,
+header h4 {
+  color: #555050;
+  text-align: center; }
+
+header h1 {
+  font-size: 20px; }
+
+header h4 {
+  font-size: 14px;
+  margin-bottom: 40px; }
+
+header a {
+  color: #55BCA5; }
+
+.reklam {
+  background-image: url(https://mealenvy.files.wordpress.com/2016/02/posts.png?w=1024&h=399&crop=1);
+  background-repeat: no-repeat;
+  /*displays the image once*/
+  background-size: contain;
+  width: 100%;
+  height: 280px; }
+
+.reklam h1,
+.reklam h4,
+.beställ {
+  color: #E8E8EB;
+  text-align: left;
+  margin-left: 10px; }
+
+.reklam h1 {
+  font-size: 30px;
+  padding-top: 10px; }
+
+.reklam h4 {
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 65%;
+  margin-bottom: 20px; }
+
+.beställ {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #55BCA5; }
+
+@media (min-width: 45em) {
+  /*Breakpoint medium*/
+  header h1 {
+    font-size: 30px; }
+  header h4 {
+    font-size: 20px; }
+  .reklam h1,
+  .reklam h4,
+  .beställ {
+    margin-left: 25px; }
+  .reklam h1 {
+    font-size: 45px;
+    padding-top: 25px; }
+  .reklam h4 {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 45%;
+    margin-bottom: 35px; }
+  .beställ {
+    font-size: 25px;
+    padding: 10px; }
+  .reklam {
+    height: 530px; } }
+
+section {
+  font-family: Merriweatherlight; }
+
+.inspiration h1 {
+  font-size: 20px;
+  color: #555050;
+  text-align: center; }
+
+.recept-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  position: relative;
+  z-index: -1; }
+
+main img {
+  height: auto;
+  width: 100%; }
+
+main p {
+  background-color: #60ABAB;
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  color: #E8E8EB;
+  text-align: center;
+  margin-top: 87%;
+  justify-content: flex-end;
+  position: absolute;
+  opacity: 0.9; }
+
+@media (min-width: 45em) {
+  section main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap: 15px; } }
