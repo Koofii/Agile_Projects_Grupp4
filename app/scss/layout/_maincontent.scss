@@ -22,4 +22,7 @@
             display: block;
         }
     }
+    & .logga-ut{
+        background-color: map-get($colors, fifth );
+    }
 }
