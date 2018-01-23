@@ -1,5 +1,5 @@
 .buttons{
-    background-color: map-get($colors, main );
+    background-color: map-get($colors, first );
     border: none;
     color: white;
     padding: 30px 50px;
@@ -27,4 +27,7 @@
             background-color: map-get($colors, first )
         }
     }
+}
+.logga-ut{
+    background-color: map-get($colors, first )
 }
