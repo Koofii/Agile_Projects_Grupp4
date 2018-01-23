@@ -24,7 +24,7 @@
   "scenarios": [
     {
       "label": "My index test",
-      "url": "../../app/index.html",
+      "url": "../../app/specific_reciepe.html",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -35,7 +35,7 @@
       "clickSelector": "",
       "postInteractionWait": "",
       "selectors": [
-        ".buttons"
+        ".ingredienser h1"
       ],
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
