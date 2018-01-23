@@ -1,0 +1,10 @@
+@include respond-to('medium') { 
+section main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:auto;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap:15px;
+}
+}
