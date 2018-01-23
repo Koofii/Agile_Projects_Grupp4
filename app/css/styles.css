@@ -512,6 +512,25 @@ footer {
   footer .kontakt {
     margin-right: 20%; } }
 
+.search-bar {
+  position: absolute;
+  background: white;
+  right: 0; }
+  .search-bar input {
+    font-size: 17px;
+    color: #55bca5;
+    border: none;
+    padding: 6px;
+    margin: 0; }
+  .search-bar button {
+    border: none;
+    background: none;
+    color: #55bca5;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0;
+    padding: 6px 10px; }
+
 .mina-flex {
   display: flex;
   justify-content: space-between; }
