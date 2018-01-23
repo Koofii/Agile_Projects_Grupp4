@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /* sass breakpoint mixin */
 .button-recept a {
   border: none;
-  color: #E8E8EB;
+  color: #e8e8eb;
   padding: 15px 32px;
   font-size: 16px;
   margin: 4px 6px;
@@ -9,7 +10,7 @@
   font-family: "Merriweather", serif; }
 
 body {
-  background-color: #E8E8EB; }
+  background-color: #e8e8eb; }
 
 a {
   text-decoration: none;
@@ -22,19 +23,19 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #157A6E; }
+  background: #157a6e; }
   .mobile-menu-bar img {
     max-width: 4em;
     margin-right: 2em; }
   .mobile-menu-bar .toggle {
     font-size: 2em;
     margin-left: 1em;
-    color: #E8E8EB; }
+    color: #e8e8eb; }
     .mobile-menu-bar .toggle:hover {
-      color: #55BCA5; }
+      color: #55bca5; }
 
 #menu {
-  background: #157A6E;
+  background: #157a6e;
   top: 0;
   bottom: 0;
   transition: ease-in-out 1s;
@@ -56,18 +57,18 @@ a {
     position: relative;
     font-size: 2em;
     margin: 10px;
-    color: #E8E8EB; }
+    color: #e8e8eb; }
     #menu .close:hover {
-      color: #55BCA5; }
+      color: #55bca5; }
   #menu .left-menu, #menu .right-menu {
     margin: 1em;
     font-size: 24px; }
     #menu .left-menu li, #menu .right-menu li {
       margin-bottom: 14px; }
       #menu .left-menu li a, #menu .right-menu li a {
-        color: #E8E8EB; }
+        color: #e8e8eb; }
         #menu .left-menu li a:hover, #menu .right-menu li a:hover {
-          color: #55BCA5; }
+          color: #55bca5; }
   #menu .left-menu {
     margin-top: 50%; }
   #menu .right-menu {
@@ -90,7 +91,7 @@ a {
     margin: -8px -8px 0px -8px;
     justify-content: space-between;
     align-items: center;
-    background: #157A6E; }
+    background: #157a6e; }
     #menu .close {
       display: none; }
     #menu .logo {
@@ -111,7 +112,7 @@ a {
       #menu ul li {
         margin-right: 4em; }
         #menu ul li a {
-          color: #E8E8EB;
+          color: #e8e8eb;
           font-size: 24px; }
         #menu ul li img {
           max-width: 7em;
@@ -133,7 +134,7 @@ a {
 .information-recept {
   text-align: center;
   font-family: "Merriweather", serif;
-  color: #157A6E; }
+  color: #157a6e; }
 
 .to-do {
   margin-top: 30px;
@@ -179,7 +180,7 @@ select {
   margin-bottom: 5px;
   border: none;
   border-radius: 2px;
-  background-color: #BEE6CE;
+  background-color: #bee6ce;
   font-family: "Merriweather", serif;
   font-weight: bold;
   color: #555050; }
@@ -204,6 +205,230 @@ select {
     .button-recept a {
       display: block; } }
   .button-recept a:nth-child(1) {
-    background-color: #55BCA5; }
+    background-color: #55bca5; }
   .button-recept a:nth-child(2) {
-    background-color: #157A6E; }
+    background-color: #157a6e; }
+
+.recept-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  position: relative;
+  z-index: -1; }
+  .recept-list img {
+    width: 100%;
+    height: auto; }
+  .recept-list p {
+    background-color: #60abab;
+    width: 100%;
+    height: 35px;
+    font-size: 30px;
+    color: #e8e8eb;
+    text-align: center;
+    margin-top: 87%;
+    justify-content: flex-end;
+    position: absolute;
+    opacity: 0.9; }
+
+h1 {
+  font-family: "Merriweather", serif;
+  color: #55bca5;
+  text-align: center; }
+
+.recept-list-name {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  color: #555050;
+  font-size: 20px; }
+
+a {
+  color: #55bca5;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 0.5em;
+  margin-bottom: 2em; }
+
+@media (min-width: 45em) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin: auto; }
+  h1 {
+    grid-row: 1;
+    grid-column: 1/4; }
+  .recept-list-name {
+    grid-column: 1/4;
+    margin: 0.5em;
+    text-align: left; }
+  .recept-list {
+    margin: 0.3em; }
+  a {
+    grid-column: 3/4;
+    margin-left: 30%; } }
+
+@media (min-width: 94em) {
+  a {
+    margin-left: 45%; } }
+
+.beställing {
+  font-family: Merriweatherlight;
+  text-align: center;
+  margin-bottom: 0; }
+
+.beställing .tak {
+  color: #55bca5;
+  margin-bottom: 30px;
+  font-size: 35px;
+  margin-top: 60px; }
+
+.beställing p {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  margin-right: 140px;
+  margin-left: 140px; }
+
+.beställing span {
+  color: #55bca5; }
+
+.beställing img {
+  height: auto;
+  width: 65%; }
+
+@media (min-width: 45em) {
+  /*Breakpoint medium*/
+  .beställing .tak {
+    font-size: 40px; }
+  .beställing p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px;
+    margin-right: 240px;
+    margin-left: 240px; }
+  .beställing img {
+    width: 50%; } }
+
+header {
+  font-family: Merriweatherlight;
+  margin-top: 50px; }
+
+header h1,
+header h4 {
+  color: #555050;
+  text-align: center; }
+
+header h1 {
+  font-size: 20px; }
+
+header h4 {
+  font-size: 14px;
+  margin-bottom: 40px; }
+
+header a {
+  color: #55bca5; }
+
+.reklam {
+  background-image: url(https://mealenvy.files.wordpress.com/2016/02/posts.png?w=1024&h=399&crop=1);
+  background-repeat: no-repeat;
+  /*displays the image once*/
+  background-size: contain;
+  width: 100%;
+  height: 280px; }
+
+.reklam h1,
+.reklam h4,
+.beställ {
+  color: #e8e8eb;
+  text-align: left;
+  margin-left: 10px; }
+
+.reklam h1 {
+  font-size: 30px;
+  padding-top: 10px; }
+
+.reklam h4 {
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 65%;
+  margin-bottom: 20px; }
+
+.beställ {
+  font-size: 15px;
+  padding: 5px;
+  background-color: #55bca5; }
+
+@media (min-width: 45em) {
+  /*Breakpoint medium*/
+  header h1 {
+    font-size: 30px; }
+  header h4 {
+    font-size: 20px; }
+  .reklam h1,
+  .reklam h4,
+  .beställ {
+    margin-left: 25px; }
+  .reklam h1 {
+    font-size: 45px;
+    padding-top: 25px; }
+  .reklam h4 {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 45%;
+    margin-bottom: 35px; }
+  .beställ {
+    font-size: 25px;
+    padding: 10px; }
+  .reklam {
+    height: 530px; } }
+
+section {
+  font-family: Merriweatherlight; }
+
+.inspiration h1 {
+  font-size: 20px;
+  color: #555050;
+  text-align: center; }
+
+.recept-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  position: relative;
+  z-index: -1; }
+
+main img {
+  height: auto;
+  width: 100%; }
+
+main p {
+  background-color: #60abab;
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  color: #e8e8eb;
+  text-align: center;
+  margin-top: 87%;
+  justify-content: flex-end;
+  position: absolute;
+  opacity: 0.9; }
+
+@media (min-width: 45em) {
+  section main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin: auto;
+    grid-gap: 15px; } }
