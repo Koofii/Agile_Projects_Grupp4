@@ -261,7 +261,7 @@ select {
     grid-template-rows: auto;
     max-width: 1200px;
     margin: auto; }
-  h1 {
+  .sidans-namn h1 {
     grid-row: 1;
     grid-column: 1/4; }
   .recept-list-name {
