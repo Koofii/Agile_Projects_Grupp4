@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: white; }
 
+* {
+  font-family: "Merriweather", serif; }
+
 .mobile-menu-bar {
   min-width: 100vw;
   margin-left: -8px;
@@ -154,6 +157,8 @@ a {
   @media (max-width: 45em) {
     .ingredienser {
       grid-column: auto; } }
+  .ingredienser h1 {
+    font-size: 30px; }
   .ingredienser p {
     border-bottom: 1px solid #555050;
     width: 90%; }
@@ -452,15 +457,18 @@ section {
   opacity: 0.9; }
 
 .mina-sidor {
-  width: 65%;
+  width: 90%;
   margin: 0 auto; }
-  @media (min-width: 45em) {
+  @media (min-width: 94em) {
     .mina-sidor {
-      width: 80%; } }
+      width: 65%; } }
 
 .ms {
   font-family: "Merriweather", serif;
   color: #60abab; }
+
+#specific-footer {
+  margin-top: 100px; }
 
 .varukorgen {
   text-align: center;
