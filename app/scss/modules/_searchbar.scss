@@ -1,0 +1,22 @@
+.search-bar{
+    position: absolute;
+    background: white;
+    right: 0;
+    z-index: -1;
+    input{
+        font-size: 17px;
+        color: map-get($colors, second);
+        border: none;
+        padding: 6px;
+        margin: 0;
+    }
+    button{
+        border: none;
+        background: none;
+        color: map-get($colors, second);
+        cursor: pointer;
+        font-size: 17px;
+        margin: 0;
+        padding: 6px 10px;
+    }
+}

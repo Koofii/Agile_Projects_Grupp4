@@ -1,5 +1,36 @@
+.index-search-bar {
+    background: white;
+    margin: 0 auto;
+    max-width: 500px;
+    z-index: -1;
+
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        font-size: 17px;
+        color: map-get($colors, second);
+        width: 100%;
+        border: none;
+        padding: 6px;
+        margin: 0;
+    }
+    button{
+        border: none;
+        background: none;
+        color: map-get($colors, second);
+        cursor: pointer;
+        font-size: 17px;
+        margin: 0;
+        padding: 6px 10px;
+    }
+}
+
 section {
     font-family: Merriweatherlight;
+    margin-bottom: 40px;
 }
 .inspiration h1 {
     font-size: 20px;

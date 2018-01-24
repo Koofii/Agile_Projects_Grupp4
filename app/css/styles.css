@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: white; }
 
+* {
+  font-family: "Merriweather", serif; }
+
 .mobile-menu-bar {
   min-width: 100vw;
   margin-left: -8px;
@@ -260,7 +263,7 @@ select {
     grid-template-rows: auto;
     max-width: 1200px;
     margin: auto; }
-  h1 {
+  .sidans-namn h1 {
     grid-row: 1;
     grid-column: 1/4; }
   .recept-list-name {
@@ -280,7 +283,7 @@ select {
 .beställing {
   font-family: Merriweatherlight;
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 40px; }
 
 .beställing .tak {
   color: #55bca5;
@@ -341,9 +344,9 @@ header a {
   background-image: url(https://mealenvy.files.wordpress.com/2016/02/posts.png?w=1024&h=399&crop=1);
   background-repeat: no-repeat;
   /*displays the image once*/
-  background-size: contain;
   width: 100%;
-  height: 280px; }
+  min-height: 240px;
+  background-size: 100vw 100%; }
 
 .reklam h1,
 .reklam h4,
@@ -354,13 +357,15 @@ header a {
 
 .reklam h1 {
   font-size: 30px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  width: 100vw; }
 
 .reklam h4 {
   font-size: 15px;
   line-height: 20px;
-  max-width: 65%;
-  margin-bottom: 20px; }
+  max-width: 75%;
+  margin-bottom: 20px;
+  width: 100vw; }
 
 .beställ {
   font-size: 15px;
@@ -389,10 +394,36 @@ header a {
     font-size: 25px;
     padding: 10px; }
   .reklam {
-    height: 530px; } }
+    min-height: 530px; } }
+
+.index-search-bar {
+  background: white;
+  margin: 0 auto;
+  max-width: 500px;
+  z-index: -1; }
+  .index-search-bar form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .index-search-bar input {
+    font-size: 17px;
+    color: #55bca5;
+    width: 100%;
+    border: none;
+    padding: 6px;
+    margin: 0; }
+  .index-search-bar button {
+    border: none;
+    background: none;
+    color: #55bca5;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0;
+    padding: 6px 10px; }
 
 section {
-  font-family: Merriweatherlight; }
+  font-family: Merriweatherlight;
+  margin-bottom: 40px; }
 
 .inspiration h1 {
   font-size: 20px;
@@ -426,16 +457,126 @@ section {
   opacity: 0.9; }
 
 .mina-sidor {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
+  @media (min-width: 94em) {
+    .mina-sidor {
+      width: 65%; } }
 
 .ms {
   font-family: "Merriweather", serif;
   color: #60abab; }
 
+#specific-footer {
+  margin-top: 100px; }
+
+.varukorgen {
+  text-align: center;
+  margin: 4em 15% 0px 15%; }
+  .varukorgen * {
+    text-decoration: none;
+    list-style-type: none; }
+  .varukorgen h2 {
+    color: #55bca5; }
+  .varukorgen p {
+    color: #555050; }
+  .varukorgen a {
+    color: #55bca5; }
+  .varukorgen .ta-bort-r {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+    .varukorgen .ta-bort-r #remove {
+      color: #555050;
+      margin-right: 1em; }
+  .varukorgen img {
+    max-width: 100%;
+    height: auto; }
+  .varukorgen .recept-storlek p span {
+    margin-left: 1em; }
+  .varukorgen .innehåll ul {
+    padding: 0;
+    margin: 0; }
+    .varukorgen .innehåll ul li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between; }
+      .varukorgen .innehåll ul li .grouped-form-item {
+        display: flex;
+        align-items: baseline; }
+        .varukorgen .innehåll ul li .grouped-form-item p {
+          margin-left: 2em; }
+  .varukorgen .slut-pris {
+    display: flex;
+    flex-direction: column; }
+  .varukorgen .button {
+    background: #157a6e;
+    border: none;
+    color: #e8e8eb;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer; }
+
+@media (min-width: 45em) {
+  .varukorgen {
+    margin: 4em 30% 0px 30%; } }
+
+footer {
+  background: #55bca5;
+  margin: 0px -8px -8px -8px;
+  display: flex;
+  justify-content: space-between; }
+  footer h4 {
+    color: #555050; }
+  footer p {
+    color: #e8e8eb;
+    font-size: 12px; }
+  footer .social-media {
+    margin-left: 3em; }
+    footer .social-media img {
+      max-width: 10vw; }
+  footer .kontakt {
+    margin-right: 3em; }
+
+@media (min-width: 45em) {
+  footer p {
+    font-size: 18px; }
+  footer h4 {
+    font-size: 22px; }
+  footer .social-media {
+    margin-left: 20%; }
+    footer .social-media img {
+      max-width: 5vw; }
+  footer .kontakt {
+    margin-right: 20%; } }
+
+.search-bar {
+  position: absolute;
+  background: white;
+  right: 0;
+  z-index: -1; }
+  .search-bar input {
+    font-size: 17px;
+    color: #55bca5;
+    border: none;
+    padding: 6px;
+    margin: 0; }
+  .search-bar button {
+    border: none;
+    background: none;
+    color: #55bca5;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0;
+    padding: 6px 10px; }
+
 .mina-flex {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 45em) {
+    .mina-flex {
+      display: inherit; } }
   .mina-flex p {
     font-size: 35px;
     color: #555050; }

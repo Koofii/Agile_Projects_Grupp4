@@ -97,8 +97,8 @@ gulp.task('clean:dist', function() {
 //Performance budget
 gulp.task('louis', function() {
   louis({
-    timeout: 60,
-    url: 'http://www.linasmatkasse.se/',
+    timeout: 30,
+    url: 'http://localhost:3000/',
     performanceBudget: {
       requests: 10,
       headersSize: 8000,
@@ -111,7 +111,6 @@ gulp.task('louis', function() {
       medianLatency: 10,
       slowestResponse: 1000,
       timeToFirstImage: 700
-      
     }
   });
 });
