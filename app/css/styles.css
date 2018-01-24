@@ -389,25 +389,31 @@ header a {
   .reklam {
     height: 530px; } }
 
-.search-bar1 {
+.index-search-bar {
   background: white;
-  width: 40%;
-  margin: 0 auto; }
-
-.search-bar1 input {
-  font-size: 17px;
-  color: #55bca5;
-  border: none;
-  padding: 6px;
-  margin: 0; }
-
-button {
-  border: none;
-  background: none;
-  color: #55bca5;
-  cursor: pointer;
-  font-size: 17px;
-  margin: auto 0; }
+  margin: 0 auto;
+  max-width: 500px; }
+  .index-search-bar form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .index-search-bar input {
+    position: relative;
+    font-size: 17px;
+    color: #55bca5;
+    width: 100%;
+    border: none;
+    padding: 6px;
+    margin: 0; }
+  .index-search-bar button {
+    position: relative;
+    border: none;
+    background: none;
+    color: #55bca5;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0;
+    padding: 6px 10px; }
 
 section {
   font-family: Merriweatherlight;
