@@ -1,0 +1,8 @@
+Ordning
+
+1. Effektkarta - Olof
+2. Styleguide - Fatme
+3. XD-Dokument / SCRUMBOARD / BDD - Fatme
+4. Webbsida - Alesja
+5. Sassdoc - Koof
+6. Prestandabudget - Koof
