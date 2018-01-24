@@ -1,7 +1,10 @@
 .mina-sidor{
-    width: 80%;
-    
+    width: 65%;
     margin: 0 auto;
+
+    @include respond-to('medium'){
+        width: 80%;
+    }
 }
 .ms{
     font-family: $font;

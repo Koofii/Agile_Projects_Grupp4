@@ -452,8 +452,11 @@ section {
   opacity: 0.9; }
 
 .mina-sidor {
-  width: 80%;
+  width: 65%;
   margin: 0 auto; }
+  @media (min-width: 45em) {
+    .mina-sidor {
+      width: 80%; } }
 
 .ms {
   font-family: "Merriweather", serif;
@@ -563,6 +566,9 @@ footer {
 .mina-flex {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 45em) {
+    .mina-flex {
+      display: inherit; } }
   .mina-flex p {
     font-size: 35px;
     color: #555050; }

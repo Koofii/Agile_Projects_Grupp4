@@ -1,6 +1,10 @@
 .mina-flex{
     display: flex;
     justify-content: space-between;
+    @include respond-to('small'){
+        display: inherit;
+    }
+    
 
     & p {
         font-size: 35px;
