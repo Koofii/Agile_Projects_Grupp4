@@ -157,6 +157,8 @@ a {
   @media (max-width: 45em) {
     .ingredienser {
       grid-column: auto; } }
+  .ingredienser h1 {
+    font-size: 30px; }
   .ingredienser p {
     border-bottom: 1px solid #555050;
     width: 90%; }

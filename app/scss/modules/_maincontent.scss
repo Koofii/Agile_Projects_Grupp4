@@ -40,6 +40,9 @@
     @include respond-to('small'){
         grid-column: auto;
     }
+    & h1{
+        font-size: 30px;
+    }
 
     & p{
         border-bottom: 1px solid map-get($colors, fifth );
