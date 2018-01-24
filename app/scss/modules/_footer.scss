@@ -1,0 +1,52 @@
+///Footer mobile
+footer{
+    background: map-get($colors, second);
+    margin: 0px -8px -8px -8px;
+    display: flex;
+    justify-content: space-between;
+    h4{
+        color: map-get($colors, fifth);
+    }
+    p{
+        color: map-get($colors, sixth);
+        font-size: 12px;
+    }
+
+    .social-media{
+        margin-left: 3em;
+        img{
+            max-width: 10vw;
+        }
+    }
+
+    .kontakt{
+        margin-right: 3em;
+    }
+    
+
+}
+
+///Footer medium brytpunkt
+@include respond-to("medium"){
+    footer{
+        
+        p{
+            font-size: 18px;
+        }
+
+        h4{
+            font-size: 22px;
+        }
+    
+        .social-media{
+            margin-left: 20%;
+            img{
+                max-width: 5vw;
+            }
+        }
+    
+        .kontakt{
+            margin-right: 20%;
+        }
+    }
+}
