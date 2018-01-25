@@ -38,6 +38,7 @@ a {
       color: #55bca5; }
 
 #menu {
+  z-index: 100;
   background: #157a6e;
   top: 0;
   bottom: 0;
@@ -554,8 +555,7 @@ footer {
 .search-bar {
   position: absolute;
   background: white;
-  right: 0;
-  z-index: -1; }
+  right: 0; }
   .search-bar input {
     font-size: 17px;
     color: #55bca5;
