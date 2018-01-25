@@ -2,7 +2,6 @@
     position: absolute;
     background: white;
     right: 0;
-    z-index: -1;
     input{
         font-size: 17px;
         color: map-get($colors, second);
